@@ -3,7 +3,7 @@ layout: home
 navbar: false
 hero:
   name: Theo-Messi
-  # text: Homepage
+  text: Homepage
   tagline: 👋 Hi there I'm Theo!
   image: ./bg.png
 
@@ -40,3 +40,5 @@ features:
     details: 常用的配置文件
     link: https://github.com/Theo-messi/dotfiles
 ---
+
+<Home />
