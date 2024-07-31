@@ -11,10 +11,10 @@ export default defineConfigWithTheme<ThemeConfig>({
   appearance: 'force-dark',
   metaChunk: true,
   cleanUrls: true,
-  sitemap: { hostname: 'https://www.theovan.cn' },
-  head: [['link', { rel: 'icon', href: 'https://i.theovan.cn/avatar.png' }]],
+  sitemap: { hostname: 'https://theojs.cn' },
+  head: [['link', { rel: 'icon', href: 'https://i.theojs.cn/avatar.png' }]],
   themeConfig: {
-    logo: 'https://i.theovan.cn/avatar.png',
+    logo: 'https://i.theojs.cn/avatar.png',
     siteTitle: false
   },
   vite: {
