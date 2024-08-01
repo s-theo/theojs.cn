@@ -2,20 +2,34 @@
   <footer class="ba">
     <div class="ff" style="display: inline-block">
       <span
-        ><a target="_blank" href="https://beian.miit.gov.cn/" name="ICP备案" title="ICP备案"
+        ><a
+          target="_blank"
+          href="https://beian.miit.gov.cn/"
+          name="ICP备案"
+          title="ICP备案"
           ><i class="fas fa-earth-americas"></i>鄂ICP备2024060426号</a
         ></span
       ><span
-        ><a target="_blank" href="https://beian.mps.gov.cn/" name="公安备案" title="公安备案"
+        ><a
+          target="_blank"
+          href="https://beian.mps.gov.cn/"
+          name="公安备案"
+          title="公安备案"
           ><i class="fas fa-shield"></i>粤公网安备44200102445449号</a
         ></span
       >
     </div>
     <div class="flex" style="display: inline-block">
       <span
-        >Copyright<i class="far fa-copyright"></i>2019 - {{ new Date().getFullYear()
-        }}<a target="_blank" name="GitHub" title="GitHub" href="https://github.com/Theo-Messi">Theo-Messi</a>. All
-        RightsReserved</span
+        >Copyright<i class="far fa-copyright"></i>2019 -
+        {{ new Date().getFullYear()
+        }}<a
+          target="_blank"
+          name="GitHub"
+          title="GitHub"
+          href="https://github.com/Theo-Messi"
+          >Theo-Messi</a
+        >. All RightsReserved</span
       >
     </div>
   </footer>

@@ -22,7 +22,9 @@ export default defineConfigWithTheme<ThemeConfig>({
       alias: [
         {
           find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(new URL('./theme/components/HomeFooter.vue', import.meta.url))
+          replacement: fileURLToPath(
+            new URL('./theme/components/HomeFooter.vue', import.meta.url)
+          )
         }
       ]
     }

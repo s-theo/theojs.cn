@@ -19,6 +19,11 @@ hero:
   icon:
     src: https://i.theojs.cn/avatar.png
 
+  prelink:
+    title: '🎉 站点迁移至 <u>https://theojs.cn</u><div style="text-align: right; font-weight: bold;"><i class="fas fa-star" style="color: #FFD43B;"></i> Ctrl+D 快速收藏网址 </div>'
+    link: https://theojs.cn/
+    target: _blank
+
 features:
   - title: Theo-Docs
     details: 流媒体森林 - 全方位流媒体 观影指南 引领您进入五彩斑斓的视听世界...

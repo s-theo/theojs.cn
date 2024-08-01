@@ -22,7 +22,7 @@
   "prettier": {
     "semi": false,
     "singleQuote": true,
-    "printWidth": 120,
+    "printWidth": 80,
     "trailingComma": "none"
   },
   "simple-git-hooks": {
