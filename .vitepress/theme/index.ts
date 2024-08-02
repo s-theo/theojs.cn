@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import { VPCarbon } from 'vitepress-carbon'
 import HomeUnderline from './components/HomeUnderline.vue'
-import Announcement from './components/Announcement.vue'
+import { Announcement } from 'tmfe/vue'
 
 import './var.scss'
 import '@fortawesome/fontawesome-free/css/all.css'
