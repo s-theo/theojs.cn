@@ -1,10 +1,10 @@
 import { h } from 'vue'
 import { VPCarbon } from 'vitepress-carbon'
-import HomeUnderline from './components/HomeUnderline.vue'
-import { Announcement } from 'tmfe/vue'
 
+import { Announcement, HomeUnderline } from 'tmfe/vue'
+
+import 'tmfe/theme'
 import './var.scss'
-import '@fortawesome/fontawesome-free/css/all.css'
 
 export default {
   extends: VPCarbon,

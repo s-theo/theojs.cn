@@ -5,7 +5,7 @@ hero:
   name: Theo-Messi
   text: Homepage
   tagline: 👋 Hi there I'm Theo!
-  image: ./bg.png
+  image: https://doc.theojs.cn/index/home.png
 
   actions:
     - theme: brand

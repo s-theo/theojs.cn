@@ -1,5 +1,4 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { fileURLToPath, URL } from 'node:url'
 import type { ThemeConfig } from 'vitepress-carbon'
 import baseConfig from 'vitepress-carbon/config'
 
@@ -19,14 +18,10 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
   vite: {
     resolve: {
-      alias: [
-        {
-          find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(
-            new URL('./theme/components/HomeFooter.vue', import.meta.url)
-          )
-        }
-      ]
+      alias: [{ find: /^.*\/VPFooter\.vue$/, replacement: 'tmfe/Footer' }]
+    },
+    define: {
+      FooterData: JSON.stringify(require('./data/footerData').Footer_Data)
     }
   }
 })
