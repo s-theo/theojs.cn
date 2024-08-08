@@ -5,7 +5,7 @@ hero:
   name: Theo-Messi
   text: Homepage
   tagline: 👋 Hi there I'm Theo!
-  image: https://doc.theojs.cn/index/home.png
+  # image: https://doc.theojs.cn/index/home.png
 
   actions:
     - theme: brand
@@ -13,7 +13,7 @@ hero:
       link: https://github.com/Theo-Messi
 
     - theme: sponsor
-      text: 成为赞助商
+      text: 赞助我的项目
       link: https://github.com/sponsors/Theo-Messi
 
   icon:
@@ -44,6 +44,10 @@ features:
   - title: dotfiles
     details: 常用的配置文件
     link: https://github.com/Theo-Messi/dotfiles
+
+  - title: TM-FE
+    details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
+    link: https://github.com/Theo-Messi/tmfe
 ---
 
 <Home />
