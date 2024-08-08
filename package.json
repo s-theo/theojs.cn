@@ -9,7 +9,7 @@
   "dependencies": {
     "lint-staged": "^15.2.8",
     "simple-git-hooks": "^2.11.1",
-    "tmfe": "^2.3.0",
+    "@theo-messi/tm-fe": "^2.3.0",
     "vitepress-carbon": "1.3.3",
     "vue": "^3.4.37"
   },

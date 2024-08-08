@@ -18,7 +18,9 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
   vite: {
     resolve: {
-      alias: [{ find: /^.*\/VPFooter\.vue$/, replacement: 'tmfe/Footer' }]
+      alias: [
+        { find: /^.*\/VPFooter\.vue$/, replacement: '@theo-messi/tm-fe/Footer' }
+      ]
     },
     define: {
       FooterData: JSON.stringify(require('./data/footerData').Footer_Data)

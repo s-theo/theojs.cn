@@ -1,9 +1,9 @@
 import { h } from 'vue'
 import { VPCarbon } from 'vitepress-carbon'
 
-import { Announcement, HomeUnderline } from 'tmfe/vue'
+import { Announcement, HomeUnderline } from '@theo-messi/tm-fe/vue'
 
-import 'tmfe/theme'
+import '@theo-messi/tm-fe/theme'
 import './var.scss'
 
 export default {

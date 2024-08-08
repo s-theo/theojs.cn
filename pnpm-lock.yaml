@@ -8,15 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@theo-messi/tm-fe':
+        specifier: ^2.3.0
+        version: 2.4.0
       lint-staged:
         specifier: ^15.2.8
         version: 15.2.8
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.11.1
-      tmfe:
-        specifier: ^2.3.0
-        version: 2.3.0
       vitepress-carbon:
         specifier: 1.3.3
         version: 1.3.3(@algolia/client-search@4.24.0)(search-insights@2.16.0)(vitepress@1.3.2(@algolia/client-search@4.24.0)(@types/node@22.1.0)(postcss@8.4.41)(sass@1.77.8)(search-insights@2.16.0))
@@ -401,6 +401,9 @@ packages:
 
   '@shikijs/transformers@1.12.1':
     resolution: {integrity: sha512-zOpj/S2thBvnJV4Ty3EE8aRs/VqCbV+lgtEYeBRkPxTW22uLADEIZq0qjt5W2Rfy2KSu29e73nRyzp4PefjUTg==}
+
+  '@theo-messi/tm-fe@2.4.0':
+    resolution: {integrity: sha512-ZgWGF7QRKJ+RzbLmwKu0hsOWSIxpItLRhhmuLpthcckm8ONK7vrF7i6vYi7hN4m/kQjVV5W6aMFmGIRywJMwXQ==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1030,9 +1033,6 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  tmfe@2.3.0:
-    resolution: {integrity: sha512-pQ+dU6+K76CHKpGeySjBkFLo/fBJSQTHpLg/MOxIfqohPFkCDACcRHleKK0JQLiAY21scUrZUYQHwkyMIQiv5w==}
-
   to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
@@ -1441,6 +1441,18 @@ snapshots:
   '@shikijs/transformers@1.12.1':
     dependencies:
       shiki: 1.12.1
+
+  '@theo-messi/tm-fe@2.4.0':
+    dependencies:
+      '@fortawesome/fontawesome-free': 6.6.0
+      '@mdit/plugin-img-size': 0.13.0
+      bumpp: 9.4.2
+      sass: 1.77.8
+      vue: 3.4.37
+    transitivePeerDependencies:
+      - magicast
+      - markdown-it
+      - typescript
 
   '@types/estree@1.0.5': {}
 
@@ -2101,18 +2113,6 @@ snapshots:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
-
-  tmfe@2.3.0:
-    dependencies:
-      '@fortawesome/fontawesome-free': 6.6.0
-      '@mdit/plugin-img-size': 0.13.0
-      bumpp: 9.4.2
-      sass: 1.77.8
-      vue: 3.4.37
-    transitivePeerDependencies:
-      - magicast
-      - markdown-it
-      - typescript
 
   to-fast-properties@2.0.0: {}
 

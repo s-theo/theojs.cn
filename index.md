@@ -47,7 +47,7 @@ features:
 
   - title: TM-FE
     details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
-    link: https://github.com/Theo-Messi/tmfe
+    link: https://github.com/Theo-Messi/tm-fe
 ---
 
 <Home />
