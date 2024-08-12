@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import { VPCarbon } from 'vitepress-carbon'
 
-import { Announcement, HomeUnderline } from '@theo-messi/tm-fe/vue'
+import { Announcement, HomeUnderline } from '@theo-messi/tm-fe'
 
 import '@theo-messi/tm-fe/theme'
 import './var.scss'
