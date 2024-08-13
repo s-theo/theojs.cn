@@ -45,9 +45,9 @@ features:
     details: 常用的配置文件
     link: https://github.com/Theo-Messi/dotfiles
 
-  - title: TM-FE
+  - title: '@theojs/lumen'
     details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
-    link: https://github.com/Theo-Messi/tm-fe
+    link: https://github.com/Theo-Messi/tools
 ---
 
 <Home />

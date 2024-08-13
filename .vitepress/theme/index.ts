@@ -1,9 +1,9 @@
 import { h } from 'vue'
 import { VPCarbon } from 'vitepress-carbon'
 
-import { Announcement, HomeUnderline } from '@theo-messi/tm-fe'
+import { Announcement, HomeUnderline } from '@theojs/lumen'
 
-import '@theo-messi/tm-fe/theme'
+import '@theojs/lumen/theme'
 import './var.scss'
 
 export default {
