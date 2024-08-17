@@ -3,8 +3,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "prettier": "prettier . --write",
-    "check": "prettier . --check"
+    "format": "prettier --write .",
+    "format:cheak": "prettier --check ."
   },
   "dependencies": {
     "lint-staged": "^15.2.8",
