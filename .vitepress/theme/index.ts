@@ -4,7 +4,6 @@ import { VPCarbon } from 'vitepress-carbon'
 import { Announcement, HomeUnderline } from '@theojs/lumen'
 
 import '@theojs/lumen/theme'
-import './var.scss'
 
 export default {
   extends: VPCarbon,
