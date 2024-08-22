@@ -1,13 +1,10 @@
-import { defineConfigWithTheme } from 'vitepress'
-import type { ThemeConfig } from 'vitepress-carbon'
-import baseConfig from 'vitepress-carbon/config'
+import { defineConfig } from 'vitepress'
 
-export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+export default defineConfig({
   title: 'Theo-Messi',
   lang: 'zh-CN',
   description: '',
-  appearance: 'force-dark',
+  // appearance: 'force-dark',
   metaChunk: true,
   cleanUrls: true,
   sitemap: { hostname: 'https://theojs.cn' },
@@ -15,15 +12,5 @@ export default defineConfigWithTheme<ThemeConfig>({
   themeConfig: {
     logo: 'https://i.theojs.cn/avatar.png',
     siteTitle: false
-  },
-  vite: {
-    resolve: {
-      alias: [
-        { find: /^.*\/VPFooter\.vue$/, replacement: '@theojs/lumen/Footer' }
-      ]
-    },
-    define: {
-      FooterData: JSON.stringify(require('./data/footerData').Footer_Data)
-    }
   }
 })

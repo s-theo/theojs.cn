@@ -1,18 +1,35 @@
+import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
-import { VPCarbon } from 'vitepress-carbon'
-
-import { Announcement, HomeUnderline } from '@theojs/lumen'
-
 import '@theojs/lumen/theme'
 
+import {
+  DocBox,
+  DocLinks,
+  DocBoxCube,
+  DocVideoLink,
+  Announcement,
+  DocAsideLogo,
+  HomeUnderline,
+  DocAttachment,
+  HomeFooter
+} from '@theojs/lumen'
+import { Aside_Data, Footer_Data } from '../data'
+
 export default {
-  extends: VPCarbon,
-  Layout: () => {
-    return h(VPCarbon.Layout, null, {
-      'home-hero-info-before': () => h(Announcement)
+  extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'home-hero-info-before': () => h(Announcement),
+      'aside-ads-before': () => h(DocAsideLogo, { Aside_Data }),
+      'layout-bottom': () => h(HomeFooter, { Footer_Data })
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp: ({ app }) => {
+    app.component('Box', DocBox)
+    app.component('Links', DocLinks)
+    app.component('File', DocAttachment)
+    app.component('BoxCube', DocBoxCube)
     app.component('Home', HomeUnderline)
+    app.component('VideoLink', DocVideoLink)
   }
 }

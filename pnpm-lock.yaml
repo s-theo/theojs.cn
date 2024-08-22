@@ -9,17 +9,14 @@ importers:
   .:
     dependencies:
       '@theojs/lumen':
-        specifier: ^2.6.3
-        version: 2.6.3
+        specifier: ^3.0.0
+        version: 3.0.0
       lint-staged:
         specifier: ^15.2.9
         version: 15.2.9
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.11.1
-      vitepress-carbon:
-        specifier: 1.3.3
-        version: 1.3.3(@algolia/client-search@4.24.0)(search-insights@2.16.2)(vitepress@1.3.3(@algolia/client-search@4.24.0)(@types/node@22.2.0)(postcss@8.4.41)(sass@1.77.8)(search-insights@2.16.2))
       vue:
         specifier: ^3.4.38
         version: 3.4.38
@@ -114,14 +111,6 @@ packages:
   '@babel/types@7.25.2':
     resolution: {integrity: sha512-YTnYtra7W9e6/oAZEHj0bJehPRUlLH9/fbpT5LfB0NhQXyALCRkRs3zH9v07IYhkgpqX6Z78FnuccZr/l4Fs4Q==}
     engines: {node: '>=6.9.0'}
-
-  '@clack/core@0.3.4':
-    resolution: {integrity: sha512-H4hxZDXgHtWTwV3RAVenqcC4VbJZNegbBjlPvzOzCouXtS2y3sDvlO3IsbrPNWuLWPPlYVYPghQdSF64683Ldw==}
-
-  '@clack/prompts@0.7.0':
-    resolution: {integrity: sha512-0MhX9/B4iL6Re04jPrttDm+BsP8y6mS7byuv0BvXgdXhbV5PdlsHt55dvNsuBCPZ7xq1oTAOOuotR9NFbQyMSA==}
-    bundledDependencies:
-      - is-unicode-supported
 
   '@docsearch/css@3.6.1':
     resolution: {integrity: sha512-VtVb5DS+0hRIprU2CO6ZQjK2Zg4QU5HrDM1+ix6rT0umsYvFvatMAnf97NHZlVWDaaLlx7GRfR/7FikANiM2Fg==}
@@ -402,8 +391,8 @@ packages:
   '@shikijs/transformers@1.14.1':
     resolution: {integrity: sha512-JJqL8QBVCJh3L61jqqEXgFq1cTycwjcGj7aSmqOEsbxnETM9hRlaB74QuXvY/fVJNjbNt8nvWo0VwAXKvMSLRg==}
 
-  '@theojs/lumen@2.6.3':
-    resolution: {integrity: sha512-C5/wJclWIyDFYhRygIfcz5AWh5TDxiJVQwfPWExQEzkeM2aLs/Q4Wln1VDlkCsr2S8iHlGtE1E2YzeiKZRL8iQ==}
+  '@theojs/lumen@3.0.0':
+    resolution: {integrity: sha512-uxpBcjH7A+jTTuvByNYTJKFx3lbKcs0yLrEFJSrcbi1fUBdzIFciPj+rBnfKa7gyYMBfMFkfPSGzmZm3z1XaNA==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -557,9 +546,6 @@ packages:
 
   birpc@0.2.17:
     resolution: {integrity: sha512-+hkTxhot+dWsLpp3gia5AkVHIsKlZybNT5gIYiDlNzJrmYPcTM9k5/w2uaj3IPpd7LlEYpmCj4Jj1nC41VhDFg==}
-
-  body-scroll-lock@3.1.5:
-    resolution: {integrity: sha512-Yi1Xaml0EvNA0OYWxXiYNqY24AfWkbA6w5vxE7GWxtKfzIbZM+Qw+aSmkgsbWzbHiy/RCSkUZBplVxTA+E4jJg==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -1085,11 +1071,6 @@ packages:
       terser:
         optional: true
 
-  vitepress-carbon@1.3.3:
-    resolution: {integrity: sha512-badvitTrIjJZM+XeS6pBbprdhcJ0iaCSuKWwHHitdiuvzc9HQr4SKAchEcFT8h0P4HlFwcIlH8UQnteS+/sVVw==}
-    peerDependencies:
-      vitepress: ^1.2.2
-
   vitepress@1.3.3:
     resolution: {integrity: sha512-6UzEw/wZ41S/CATby7ea7UlffvRER/uekxgN6hbEvSys9ukmLOKsz87Ehq9yOx1Rwiw+Sj97yjpivP8w1sUmng==}
     hasBin: true
@@ -1257,17 +1238,6 @@ snapshots:
       '@babel/helper-string-parser': 7.24.8
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
-
-  '@clack/core@0.3.4':
-    dependencies:
-      picocolors: 1.0.1
-      sisteransi: 1.0.5
-
-  '@clack/prompts@0.7.0':
-    dependencies:
-      '@clack/core': 0.3.4
-      picocolors: 1.0.1
-      sisteransi: 1.0.5
 
   '@docsearch/css@3.6.1': {}
 
@@ -1441,7 +1411,7 @@ snapshots:
     dependencies:
       shiki: 1.14.1
 
-  '@theojs/lumen@2.6.3':
+  '@theojs/lumen@3.0.0':
     dependencies:
       '@fortawesome/fontawesome-free': 6.6.0
       bumpp: 9.5.1
@@ -1620,8 +1590,6 @@ snapshots:
   binary-extensions@2.3.0: {}
 
   birpc@0.2.17: {}
-
-  body-scroll-lock@3.1.5: {}
 
   braces@3.0.3:
     dependencies:
@@ -2136,20 +2104,6 @@ snapshots:
       '@types/node': 22.2.0
       fsevents: 2.3.3
       sass: 1.77.8
-
-  vitepress-carbon@1.3.3(@algolia/client-search@4.24.0)(search-insights@2.16.2)(vitepress@1.3.3(@algolia/client-search@4.24.0)(@types/node@22.2.0)(postcss@8.4.41)(sass@1.77.8)(search-insights@2.16.2)):
-    dependencies:
-      '@clack/prompts': 0.7.0
-      '@docsearch/css': 3.6.1
-      '@docsearch/js': 3.6.1(@algolia/client-search@4.24.0)(search-insights@2.16.2)
-      body-scroll-lock: 3.1.5
-      vitepress: 1.3.3(@algolia/client-search@4.24.0)(@types/node@22.2.0)(postcss@8.4.41)(sass@1.77.8)(search-insights@2.16.2)
-    transitivePeerDependencies:
-      - '@algolia/client-search'
-      - '@types/react'
-      - react
-      - react-dom
-      - search-insights
 
   vitepress@1.3.3(@algolia/client-search@4.24.0)(@types/node@22.2.0)(postcss@8.4.41)(sass@1.77.8)(search-insights@2.16.2):
     dependencies:
