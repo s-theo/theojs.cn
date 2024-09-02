@@ -7,9 +7,9 @@
     "format:cheak": "prettier --check ."
   },
   "dependencies": {
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^3.0.1",
+    "@theojs/lumen": "^3.2.1",
     "vue": "^3.4.38"
   },
   "devDependencies": {
