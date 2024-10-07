@@ -9,8 +9,8 @@
   "dependencies": {
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^3.3.2",
-    "vue": "^3.5.10"
+    "@theojs/lumen": "^3.3.3",
+    "vue": "^3.5.11"
   },
   "devDependencies": {
     "prettier": "3.3.3",
