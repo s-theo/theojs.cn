@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Theo-Messi',
+  title: 'Theo-Messi Homepage',
   lang: 'zh-CN',
   description: '',
   // appearance: 'force-dark',
