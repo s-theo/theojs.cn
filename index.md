@@ -32,7 +32,7 @@ features:
     details: 玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作
     link: https://xx.theojs.cn/
 
-  - title: '<span style="display: inline-flex; align-items: center;"><img src="https://tools.theojs.cn/TM-FELogo.png" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
+  - title: '<span style="display: inline-flex; align-items: center;"><img src="https://tools.theojs.cn/Logo.png" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
     details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
     link: https://github.com/Theo-Messi/tools
 
