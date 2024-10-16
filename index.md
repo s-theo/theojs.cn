@@ -14,10 +14,10 @@ hero:
       text: 赞助我的项目
       link: https://github.com/sponsors/Theo-Messi
 
-  prelink:
-    title: '🎉 活动不停歇，国庆大狂欢！飞鸟国庆活动开始啦！<div><i class="fa-regular fa-hourglass-half" style="color: var(--vp-c-brand-3)"></i> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3);font-weight: bold;">2024年10月15日23点59分</span></div>'
-    link: https://fbinv02.fbaff.cc/auth/register?code=RZP3
-    target: _blank
+  # prelink:
+  #   title: '🎉 活动不停歇，国庆大狂欢！飞鸟国庆活动开始啦！<div><i class="fa-regular fa-hourglass-half" style="color: var(--vp-c-brand-3)"></i> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3);font-weight: bold;">2024年10月15日23点59分</span></div>'
+  #   link: https://fbinv02.fbaff.cc/auth/register?code=RZP3
+  #   target: _blank
 
 features:
   - title: '<span style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/avatar.png" style="width:2rem; margin-right: 0.5rem;"/>Theo-Docs</span>'
