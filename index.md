@@ -4,6 +4,7 @@ navbar: false
 hero:
   name: Theo-Messi
   text: Homepage
+  tagline: 自助者方得天助
 
   actions:
     - theme: brand

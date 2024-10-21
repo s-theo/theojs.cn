@@ -7,9 +7,9 @@
     "format:cheak": "prettier --check ."
   },
   "dependencies": {
+    "@theojs/lumen": "^3.5.7",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^3.5.1",
     "vue": "^3.5.12"
   },
   "devDependencies": {
@@ -30,5 +30,5 @@
       "prettier --write --ignore-unknown"
     ]
   },
-  "packageManager": "pnpm@9.12.0"
+  "packageManager": "pnpm@9.12.2"
 }
