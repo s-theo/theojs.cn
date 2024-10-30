@@ -58,6 +58,13 @@ export default defineConfig({
   },
   themeConfig: {
     logo: 'https://i.theojs.cn/avatar.png',
-    siteTitle: false
+    siteTitle: false,
+    notFound: {
+      title: '找不到页面',
+      quote: '页面不见了，也许它去找寻新的冒险了！',
+      linkLabel: '返回首页重新探索',
+      linkText: '返回首页',
+      code: '404'
+    }
   }
 })
