@@ -33,9 +33,9 @@ features:
     details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
     link: https://github.com/Theo-Messi/tools
 
-  - title: '<span style="display: inline-flex; align-items: center;"><img src="https://avatars.githubusercontent.com/u/12334581?s=280&v=4" style="width:2rem; margin-right: 0.5rem;"/>Tencent-cos-sync</span>'
-    details: 定时将腾讯云 COS 内容同步到此仓库
-    link: https://github.com/Theo-Messi/Tencent-cos-sync
+  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://avatars.githubusercontent.com/u/12334581?s=280&v=4" style="width:2rem; margin-right: 0.5rem;"/>Tencent-cos-sync</span>'
+  #   details: 定时将腾讯云 COS 内容同步到此仓库
+  #   link: https://github.com/Theo-Messi/Tencent-cos-sync
 
   - title: '<span style="display: inline-flex; align-items: center;"><img src="https://blog.zachinachshon.com/assets/images/localdev/dotfiles/dotfiles-blog-220x230.png" style="width:2rem; margin-right: 0.5rem;"/>dotfiles</span>'
     details: 常用的配置文件
