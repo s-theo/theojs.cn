@@ -16,7 +16,7 @@ hero:
       link: https://github.com/sponsors/Theo-Messi
 
   # prelink:
-  #   title: '🎉 活动不停歇，青云梯 双11 特惠折上折! </br>年付8折/2年付7折/3年付6折 配合优惠码折上折，最高可达48折<div><i class="fa-regular fa-hourglass-half" style="color: var(--vp-c-brand-3)"></i> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3);font-weight: bold;">2024年11月17日23点59分</span></div>'
+  #   title: '🎉 活动不停歇，青云梯 双11 特惠折上折! </br>年付8折/2年付7折/3年付6折 配合优惠码折上折，最高可达48折<div><iconify-icon icon="eos-icons:hourglass" style="font-size: 1rem;"></iconify-icon> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3); font-weight: bold;">2024年11月17日23点59分</span></div>'
   #   link: https://ivt01.qytaff.cc/register?aff=jjgD79Jd
   #   target: _blank
 
@@ -29,9 +29,9 @@ features:
     details: 玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作
     link: https://xx.theojs.cn/
 
-  - title: '<span style="display: inline-flex; align-items: center;"><img src="https://tools.theojs.cn/Logo.png" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
+  - title: '<span style="display: inline-flex; align-items: center;"><img src="https://lumen.theojs.cn/Logo.png" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
     details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
-    link: https://github.com/Theo-Messi/tools
+    link: https://github.com/Theo-Messi/lumen
 
   # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://avatars.githubusercontent.com/u/12334581?s=280&v=4" style="width:2rem; margin-right: 0.5rem;"/>Tencent-cos-sync</span>'
   #   details: 定时将腾讯云 COS 内容同步到此仓库

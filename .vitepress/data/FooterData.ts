@@ -13,7 +13,7 @@ export const Footer_Data: FooterData = {
   group: [
     {
       title: 'GitHub Source',
-      icon: 'fab fa-github',
+      icon: 'mdi:github',
       links: [
         {
           name: 'Theo-Docs',
@@ -29,13 +29,13 @@ export const Footer_Data: FooterData = {
         },
         {
           name: 'Lumen',
-          href: 'https://github.com/Theo-Messi/tools'
+          href: 'https://github.com/Theo-Messi/lumen'
         }
       ]
     },
     {
       title: '合作伙伴',
-      icon: 'fas fa-handshake',
+      icon: 'mdi:partnership',
       links: [
         {
           name: '青云梯',
@@ -61,7 +61,7 @@ export const Footer_Data: FooterData = {
     },
     {
       title: '观影指南',
-      icon: 'fas fa-book-open',
+      icon: 'mdi:local-movies',
       links: [
         {
           name: 'Netflix',
@@ -85,7 +85,7 @@ export const Footer_Data: FooterData = {
     },
     {
       title: '相关链接',
-      icon: 'fas fa-link',
+      icon: 'mdi:link-variant',
       links: [
         { name: 'Theo-Docs', href: 'https://doc.theojs.cn/' },
         { name: '玄学宝典', href: 'https://xx.theojs.cn/' },
