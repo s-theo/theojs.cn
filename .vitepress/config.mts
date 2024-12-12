@@ -10,7 +10,6 @@ export default defineConfig({
   cleanUrls: true,
   sitemap: { hostname: 'https://theojs.cn' },
   head,
-  vite: { css: { preprocessorOptions: { scss: { api: 'modern' } } } },
   themeConfig: {
     logo: 'https://i.theojs.cn/avatar.png',
     siteTitle: false,
