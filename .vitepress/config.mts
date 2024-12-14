@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+
 import { head } from './config/head'
 
 export default defineConfig({

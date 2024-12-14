@@ -1,8 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
+
 import { h } from 'vue'
+
+import { Announcement, HomeFooter, HomeUnderline } from '@theojs/lumen'
 import '@theojs/lumen/theme'
 
-import { Announcement, HomeUnderline, HomeFooter } from '@theojs/lumen'
 import { Footer_Data } from '../data'
 
 export default {
