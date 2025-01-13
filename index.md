@@ -21,15 +21,15 @@ hero:
   #   target: _blank
 
 features:
-  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/avatar.png" style="width:2rem; margin-right: 0.5rem;"/>Theo-Docs</span>'
+  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/avatar.webp" style="width:2rem; margin-right: 0.5rem;"/>Theo-Docs</span>'
   #   details: 流媒体森林 - 全方位流媒体 观影指南 引领您进入五彩斑斓的视听世界...
   #   link: https://doc.theojs.cn/
 
-  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/avatar.png" style="width:2rem; margin-right: 0.5rem;"/>玄学宝典</span>'
+  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/avatar.webp" style="width:2rem; margin-right: 0.5rem;"/>玄学宝典</span>'
   #   details: 玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作
   #   link: https://xx.theojs.cn/
 
-  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://lumen.theojs.cn/Logo.png" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
+  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://lumen.theojs.cn/Logo.webp" style="width:2rem; margin-right: 0.5rem;"/>@theojs/lumen</span>'
   #   details: ✨ 集成 Vue 功能组件和主题美化的 VitePress 插件
   #   link: https://github.com/Theo-Messi/lumen
 
@@ -37,7 +37,7 @@ features:
   #   details: 定时将腾讯云 COS 内容同步到此仓库
   #   link: https://github.com/Theo-Messi/Tencent-cos-sync
 
-  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://blog.zachinachshon.com/assets/images/localdev/dotfiles/dotfiles-blog-220x230.png" style="width:2rem; margin-right: 0.5rem;"/>dotfiles</span>'
+  # - title: '<span style="display: inline-flex; align-items: center;"><img src="https://blog.zachinachshon.com/assets/images/localdev/dotfiles/dotfiles-blog-220x230.webp" style="width:2rem; margin-right: 0.5rem;"/>dotfiles</span>'
   #   details: 常用的配置文件
   #   link: https://github.com/Theo-Messi/dotfiles
 ---

@@ -12,7 +12,7 @@ export default defineConfig({
   sitemap: { hostname: 'https://theojs.cn' },
   head,
   themeConfig: {
-    logo: 'https://i.theojs.cn/avatar.png',
+    logo: 'https://i.theojs.cn/avatar.webp',
     siteTitle: false,
     notFound: {
       title: '找不到页面',
