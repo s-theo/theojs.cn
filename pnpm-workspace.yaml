@@ -1,0 +1,4 @@
+packages:
+  - '.' # 根目录即默认包
+ignoredBuiltDependencies:
+  - esbuild

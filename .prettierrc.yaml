@@ -25,4 +25,3 @@ overrides:
   - files: ['*.json']
     options:
       jsonRecursiveSort: true
-
