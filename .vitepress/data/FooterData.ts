@@ -7,7 +7,7 @@ export const Footer_Data: FooterData = {
     showIcon: true
   },
   author: {
-    name: 'Theo-Messi',
+    name: 'Theo',
     link: 'https://github.com/Theo-Messi'
   }
   // group: [
@@ -35,33 +35,27 @@ export const Footer_Data: FooterData = {
   //   },
   //   {
   //     title: '合作伙伴',
-  //     icon: 'mdi:partnership',
+  //     icon: 'heroicons:user-group-solid',
   //     links: [
   //       {
   //         name: '青云梯',
   //         icon: 'el:fire',
-  //         color: 'rgba(255, 87, 51, 1)',
-  //         link: 'https://qytcc01.qingyunti.pro/register?aff=jjgD79Jd'
+  //         color: '#FF5733',
+  //         link: 'https://s.theojs.cn/qyt'
   //       },
-  //       { name: '银河录像局', link: 'https://nf.video/kaIuE' },
-  //       { name: '奈飞小铺', link: 'https://ihezu.love/UKTer6' },
-  //       {
-  //         name: 'FlyingBird',
-  //         link: 'https://fbinv02.fbaff.cc/auth/register?code=RZP3'
-  //       },
-  //       {
-  //         name: '飞兔云',
-  //         link: 'https://feitu.im/index.html?register=2cFF8mg4'
-  //       },
-  //       {
-  //         name: 'SMS-Activate',
-  //         link: 'https://sms-activate.io/?ref=8170513'
-  //       }
+  //       { name: 'Totoro Cloud - 龙猫云', link: 'https://s.theojs.cn/totoro' },
+  //       { name: 'TNT Cloud', link: 'https://s.theojs.cn/tnt' },
+  //       { name: 'FlyingBird', link: 'https://s.theojs.cn/flyingbird' },
+  //       { name: '飞兔云', link: 'https://s.theojs.cn/feitu' },
+  //       { name: '银河录像局', link: 'https://s.theojs.cn/yh' },
+  //       { name: '奈飞小铺', link: 'https://s.theojs.cn/ihezu' },
+  //       { name: '蜜糖商店', link: 'https://s.theojs.cn/metshop' },
+  //       { name: 'SMS-Activate', link: 'https://s.theojs.cn/sms' }
   //     ]
   //   },
   //   {
   //     title: '观影指南',
-  //     icon: 'mdi:local-movies',
+  //     icon: 'heroicons:film-16-solid',
   //     links: [
   //       {
   //         name: 'Netflix',
@@ -85,11 +79,12 @@ export const Footer_Data: FooterData = {
   //   },
   //   {
   //     title: '相关链接',
-  //     icon: 'mdi:link-variant',
+  //     icon: 'heroicons:link-16-solid',
   //     links: [
   //       { name: 'Theo-Docs', link: 'https://doc.theojs.cn/' },
   //       { name: '玄学宝典', link: 'https://xx.theojs.cn/' },
-  //       { name: 'VitePress', link: 'https://vitepress.dev/' }
+  //       { name: 'VitePress', link: 'https://vitepress.dev/' },
+  //       { name: 'Lumen', link: 'https://lumen.theojs.cn/' }
   //     ]
   //   }
   // ]

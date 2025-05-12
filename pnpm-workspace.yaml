@@ -1,4 +1,5 @@
 packages:
-  - '.' # 根目录即默认包
+  - .
 ignoredBuiltDependencies:
   - esbuild
+  - simple-git-hooks
