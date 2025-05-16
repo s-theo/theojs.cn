@@ -2,7 +2,7 @@
 layout: home
 navbar: false
 hero:
-  name: Theo-Messi
+  name: Theo
   text: Homepage
   tagline: 自助者方得天助
 

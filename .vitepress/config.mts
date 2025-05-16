@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 import { head } from './config/head'
 
 export default defineConfig({
-  title: 'Theo-Messi Homepage',
-  lang: 'zh-CN',
+  title: 'Theo Homepage',
+  lang: 'zh-hans',
   description: '',
   // appearance: 'force-dark',
   metaChunk: true,
