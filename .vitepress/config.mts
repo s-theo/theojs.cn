@@ -5,7 +5,7 @@ import { head } from './config/head'
 export default defineConfig({
   title: 'Theo Homepage',
   lang: 'zh-hans',
-  description: '',
+  description: 'Homepage',
   // appearance: 'force-dark',
   metaChunk: true,
   cleanUrls: true,

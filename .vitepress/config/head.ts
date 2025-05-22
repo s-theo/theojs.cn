@@ -1,7 +1,7 @@
 import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
-  ['link', { rel: 'icon', href: 'https://i.theojs.cn/avatar.webp' }],
+  ['link', { rel: 'icon', href: 'https://i.theojs.cn/logo/avatar-mini.webp' }],
   ['link', { rel: 'canonical', href: 'https://theojs.cn/' }],
   ['meta', { name: 'msapplication-TileColor', content: '#da532c' }],
   ['meta', { name: 'theme-color', content: '#ffffff' }],
@@ -15,7 +15,7 @@ export const head: HeadConfig[] = [
   ['meta', { property: 'og:url', content: 'https://theojs.cn/' }],
   [
     'meta',
-    { property: 'og:image', content: 'https://i.theojs.cn/avatar.webp' }
+    { property: 'og:image', content: 'https://i.theojs.cn/logo/theojs-og.webp' }
   ],
   ['meta', { property: 'og:description', content: 'Theo Homepage' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -25,27 +25,9 @@ export const head: HeadConfig[] = [
   ['meta', { name: 'twitter:description', content: 'Theo Homepage' }],
   [
     'meta',
-    { name: 'twitter:image', content: 'https://i.theojs.cn/avatar.webp' }
-  ],
-  [
-    'script',
-    { type: 'application/ld+json' },
-    JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      url: 'https://theojs.cn/',
-      name: 'Theo Homepage',
-      description: 'Theo Homepage',
-      inLanguage: 'zh-hans',
-      author: { '@type': 'Person', name: 'Theo' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Theo',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://i.theojs.cn/avatar.webp'
-        }
-      }
-    })
+    {
+      name: 'twitter:image',
+      content: 'https://i.theojs.cn/logo/theojs-og.webp'
+    }
   ]
 ]
