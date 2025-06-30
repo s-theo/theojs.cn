@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 
 import { Announcement, HomeFooter, HomeUnderline } from '@theojs/lumen'
-import '@theojs/lumen/theme'
+import '@theojs/lumen/style'
 
 import { Footer_Data } from '../data'
 
