@@ -9,7 +9,7 @@ export const head: HeadConfig[] = [
   ['meta', { name: 'copyright', content: 'Theo' }],
   ['meta', { name: 'description', content: 'Theo Homepage' }],
   ['meta', { property: 'og:type', content: 'website' }],
-  ['meta', { property: 'og:locale', content: 'zh-hans' }],
+  ['meta', { property: 'og:locale', content: 'zh-Hans' }],
   ['meta', { property: 'og:site_name', content: 'Theo Homepage' }],
   ['meta', { property: 'og:title', content: 'Theo Homepage' }],
   ['meta', { property: 'og:url', content: 'https://theojs.cn/' }],
