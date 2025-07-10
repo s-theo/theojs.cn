@@ -2,7 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 
 import { h } from 'vue'
 
-import { Footer, Underline } from '@theojs/lumen'
+import { Footer, Links, Underline } from '@theojs/lumen'
 import '@theojs/lumen/style'
 
 import { Footer_Data } from '../data'
@@ -16,5 +16,6 @@ export default {
   },
   enhanceApp: ({ app }) => {
     app.component('Home', Underline)
+    app.component('Links', Links)
   }
 }

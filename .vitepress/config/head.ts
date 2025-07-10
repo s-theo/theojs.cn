@@ -13,21 +13,12 @@ export const head: HeadConfig[] = [
   ['meta', { property: 'og:site_name', content: 'Theo Homepage' }],
   ['meta', { property: 'og:title', content: 'Theo Homepage' }],
   ['meta', { property: 'og:url', content: 'https://theojs.cn/' }],
-  [
-    'meta',
-    { property: 'og:image', content: 'https://i.theojs.cn/logo/theojs-og.webp' }
-  ],
+  ['meta', { property: 'og:image', content: 'https://i.theojs.cn/logo/theojs-og.webp' }],
   ['meta', { property: 'og:description', content: 'Theo Homepage' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@TheoMessi_' }],
   ['meta', { name: 'twitter:creator', content: '@TheoMessi_' }],
   ['meta', { name: 'twitter:title', content: 'Theo Homepage' }],
   ['meta', { name: 'twitter:description', content: 'Theo Homepage' }],
-  [
-    'meta',
-    {
-      name: 'twitter:image',
-      content: 'https://i.theojs.cn/logo/theojs-og.webp'
-    }
-  ]
+  ['meta', { name: 'twitter:image', content: 'https://i.theojs.cn/logo/theojs-og.webp' }]
 ]
