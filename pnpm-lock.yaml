@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@theojs/lumen':
-        specifier: ^6.1.0
-        version: 6.1.0(vue@3.5.17(typescript@5.8.3))
+        specifier: ^6.1.1
+        version: 6.1.1(vue@3.5.17(typescript@5.8.3))
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.2.2
         version: 5.2.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.2)
@@ -481,8 +481,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@theojs/lumen@6.1.0':
-    resolution: {integrity: sha512-a+GQbyKzCz3f2vPC11K0QTEfYuseUOmJ2cq0F2cEhZg2qsRHcP4t7Abc+gQKyQHV6mtnZIuUnzK5erl3qJgY0w==}
+  '@theojs/lumen@6.1.1':
+    resolution: {integrity: sha512-8VMkx+AKlPovcZ0GDoSGjIgS8m5hCCQ718gY+kg2nAouyqX67UP4KCZpj206u6Z7wiWzUr0k3VorpIkoMDeLhA==}
 
   '@trivago/prettier-plugin-sort-imports@5.2.2':
     resolution: {integrity: sha512-fYDQA9e6yTNmA13TLVSA+WMQRc5Bn/c0EUBditUHNfMMxN7M82c38b1kEggVE3pLpZ0FwkwJkUEKMiOi52JXFA==}
@@ -622,8 +622,8 @@ packages:
     resolution: {integrity: sha512-o0lWjt+/oZH1/4q3DJxTf5kdkgNbSmoLRXIiGznW225A6hq9/9IkOO1DiAijIsxGYJS6psFC+58+IzkD1EerBA==}
     engines: {node: '>=18'}
 
-  '@waline/client@3.5.7':
-    resolution: {integrity: sha512-9DMlO9fiOgnBQRCIlyasfe0mbpIe4fgecsbOLhai1TbAa9XONFfZYvHoqppedfiyT8Wi156PUFgGNkXFIJowEg==}
+  '@waline/client@3.6.0':
+    resolution: {integrity: sha512-GzRHOpyveRlJamS/QOQ6OItYzvU6px4wtb9enGiwtWcODHSgU+21GZd++czjLwwiyiEgMNOCe8Wqll4ianI38w==}
     engines: {node: '>=18'}
 
   algoliasearch@5.31.0:
@@ -840,9 +840,9 @@ packages:
     peerDependencies:
       marked: '>=4 <17'
 
-  marked@15.0.12:
-    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
-    engines: {node: '>= 18'}
+  marked@16.0.0:
+    resolution: {integrity: sha512-MUKMXDjsD/eptB7GPzxo4xcnLS6oo7/RHimUMHEDRhUooPwmN9BEpMl7AEOJv3bmso169wHI2wUF9VQgL7zfmA==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   mdast-util-to-hast@13.2.0:
@@ -1538,10 +1538,10 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@theojs/lumen@6.1.0(vue@3.5.17(typescript@5.8.3))':
+  '@theojs/lumen@6.1.1(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.17(typescript@5.8.3))
-      '@waline/client': 3.5.7(typescript@5.8.3)
+      '@waline/client': 3.6.0(typescript@5.8.3)
       iconify-icon: 3.0.0
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -1678,13 +1678,13 @@ snapshots:
 
   '@waline/api@1.0.0': {}
 
-  '@waline/client@3.5.7(typescript@5.8.3)':
+  '@waline/client@3.6.0(typescript@5.8.3)':
     dependencies:
       '@vueuse/core': 13.5.0(vue@3.5.17(typescript@5.8.3))
       '@waline/api': 1.0.0
       autosize: 6.0.1
-      marked: 15.0.12
-      marked-highlight: 2.2.2(marked@15.0.12)
+      marked: 16.0.0
+      marked-highlight: 2.2.2(marked@16.0.0)
       recaptcha-v3: 1.11.3
       vue: 3.5.17(typescript@5.8.3)
     transitivePeerDependencies:
@@ -1909,11 +1909,11 @@ snapshots:
 
   mark.js@8.11.1: {}
 
-  marked-highlight@2.2.2(marked@15.0.12):
+  marked-highlight@2.2.2(marked@16.0.0):
     dependencies:
-      marked: 15.0.12
+      marked: 16.0.0
 
-  marked@15.0.12: {}
+  marked@16.0.0: {}
 
   mdast-util-to-hast@13.2.0:
     dependencies:
