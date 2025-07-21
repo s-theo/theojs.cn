@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-import { head } from './config/head'
+import { head, transformPageData } from './configs'
 
 export default defineConfig({
   title: 'Theo Homepage',
@@ -11,6 +11,7 @@ export default defineConfig({
   cleanUrls: true,
   sitemap: { hostname: 'https://theojs.cn' },
   head,
+  transformPageData,
   themeConfig: {
     logo: 'https://i.theojs.cn/logo/avatar-mini.webp',
     siteTitle: false,
