@@ -15,7 +15,7 @@
     "*": "prettier --experimental-cli --ignore-unknown --write"
   },
   "devDependencies": {
-    "@theojs/lumen": "^6.3.2",
+    "@theojs/lumen": "^6.4.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "lint-staged": "^16.1.2",
     "prettier": "3.6.2",
@@ -23,7 +23,7 @@
     "prettier-plugin-sort-json": "4.1.1",
     "simple-git-hooks": "^2.13.0",
     "vitepress": "2.0.0-alpha.8",
-    "vue": "^3.5.17"
+    "vue": "^3.5.18"
   },
   "packageManager": "pnpm@10.13.1"
 }
