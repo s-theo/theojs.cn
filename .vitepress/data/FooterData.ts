@@ -28,7 +28,6 @@ export const Footer_Data: FooterData = {
   //       { name: 'Galaxy - 银河云', link: 'https://itheo.top/yhy', rel: 'sponsored noreferrer' },
   //       { name: 'TNT Cloud', link: 'https://itheo.top/tnt', rel: 'sponsored noreferrer' },
   //       { name: '小蜜蜂', link: 'https://itheo.top/bee', rel: 'sponsored noreferrer' },
-  //       { name: '飞兔云', link: 'https://itheo.top/feitu', rel: 'sponsored noreferrer' }
   //     ]
   //   },
   //   {
