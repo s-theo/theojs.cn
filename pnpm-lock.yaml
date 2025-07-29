@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@theojs/lumen':
-        specifier: ^6.4.0
-        version: 6.4.0(vue@3.5.18(typescript@5.8.3))
+        specifier: ^6.4.1
+        version: 6.4.1(vue@3.5.18(typescript@5.8.3))
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.2.2
         version: 5.2.2(@vue/compiler-sfc@3.5.18)(prettier@3.6.2)
@@ -392,8 +392,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@theojs/lumen@6.4.0':
-    resolution: {integrity: sha512-2gEfC5NmzWfyY3S0Di6J5PK73KGqO4cjfCfRPs4PpG5psGKRkkbRaqrUDu3vsGRO6l0Tcs5dbiuNALBrlIg1Jg==}
+  '@theojs/lumen@6.4.1':
+    resolution: {integrity: sha512-/2QmCM1T8L31a+VmM1jtVsgUJIDpzJUiEIYyC+ZKH/NKFhYlWNRhJXE+RwF8hXNQZbiSzbkt4baJxBCP9xYJcQ==}
 
   '@trivago/prettier-plugin-sort-imports@5.2.2':
     resolution: {integrity: sha512-fYDQA9e6yTNmA13TLVSA+WMQRc5Bn/c0EUBditUHNfMMxN7M82c38b1kEggVE3pLpZ0FwkwJkUEKMiOi52JXFA==}
@@ -1314,7 +1314,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@theojs/lumen@6.4.0(vue@3.5.18(typescript@5.8.3))':
+  '@theojs/lumen@6.4.1(vue@3.5.18(typescript@5.8.3))':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.18(typescript@5.8.3))
       '@waline/client': 3.6.0(typescript@5.8.3)
