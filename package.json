@@ -5,7 +5,7 @@
     "format": "prettier --experimental-cli --write .",
     "format:cheak": "prettier --experimental-cli --check .",
     "iall": "pnpm -r install",
-    "preview": "pnpm -F=docs preview",
+    "preview": "vitepress preview",
     "upall": "pnpm -r update --latest"
   },
   "simple-git-hooks": {
