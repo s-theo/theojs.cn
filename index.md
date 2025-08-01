@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: GitHub
-      link: https://github.com/Theo-Messi
+      link: https://github.com/s-theo
 
     - theme: sponsor
       text: 赞助我的项目
@@ -27,7 +27,7 @@ features:
 
   - title: '<img src="https://i.theojs.cn/logo/lumen-logo-mini.svg" width="24" height="24" alt="lumen logo" />@theojs/lumen'
     details: ✨ 专为 VitePress 打造的主题美化与 Vue 扩展组件库
-    link: https://github.com/Theo-Messi/lumen
+    link: https://github.com/s-theo/lumen
 ---
 
 <Home />

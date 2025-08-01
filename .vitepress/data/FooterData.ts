@@ -6,16 +6,16 @@ export const Footer_Data: FooterData = {
     police: { number: '粤公网安备44200102445449号' },
     showIcon: true
   },
-  author: { name: 'Theo', link: 'https://github.com/Theo-Messi' }
+  author: { name: 'Theo', link: 'https://github.com/s-theo' }
   // group: [
   //   {
   //     title: 'GitHub Source',
   //     icon: 'mdi:github',
   //     links: [
-  //       { name: 'Theo-Docs', link: 'https://github.com/Theo-Messi/Theo-Docs' },
-  //       { name: '玄学宝典', link: 'https://github.com/Theo-Messi/xx.theojs.cn' },
-  //       { name: '常用配置文件', link: 'https://github.com/Theo-Messi/dotfiles' },
-  //       { name: 'Lumen', link: 'https://github.com/Theo-Messi/lumen' }
+  //       { name: 'Theo-Docs', link: 'https://github.com/s-theo/Theo-Docs' },
+  //       { name: '玄学宝典', link: 'https://github.com/s-theo/xx.theojs.cn' },
+  //       { name: '常用配置文件', link: 'https://github.com/s-theo/dotfiles' },
+  //       { name: 'Lumen', link: 'https://github.com/s-theo/lumen' }
   //     ]
   //   },
   //   {
