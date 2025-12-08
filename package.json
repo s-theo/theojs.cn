@@ -15,16 +15,16 @@
     "*": "prettier --experimental-cli --ignore-unknown --write"
   },
   "devDependencies": {
-    "@theojs/lumen": "^6.4.4",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "lint-staged": "^16.2.4",
-    "prettier": "3.6.2",
-    "prettier-plugin-packagejson": "^2.5.19",
+    "@theojs/lumen": "^6.4.5",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "3.7.4",
+    "prettier-plugin-packagejson": "^2.5.20",
     "prettier-plugin-sort-json": "4.1.1",
     "simple-git-hooks": "^2.13.1",
-    "vite": "npm:rolldown-vite@^7.1.10",
-    "vitepress": "2.0.0-alpha.12",
-    "vue": "^3.5.22"
+    "vite": "npm:rolldown-vite@^7.2.10",
+    "vitepress": "2.0.0-alpha.15",
+    "vue": "^3.5.25"
   },
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "pnpm@10.24.0"
 }
