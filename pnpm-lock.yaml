@@ -12,26 +12,26 @@ importers:
         specifier: ^6.4.5
         version: 6.4.5(vue@3.5.26(typescript@5.9.3))
       '@trivago/prettier-plugin-sort-imports':
-        specifier: ^6.0.0
-        version: 6.0.0(@vue/compiler-sfc@3.5.26)(prettier@3.7.4)
+        specifier: ^6.0.2
+        version: 6.0.2(@vue/compiler-sfc@3.5.26)(prettier@3.8.0)
       lint-staged:
         specifier: ^16.2.7
         version: 16.2.7
       prettier:
-        specifier: 3.7.4
-        version: 3.7.4
+        specifier: 3.8.0
+        version: 3.8.0
       prettier-plugin-packagejson:
-        specifier: ^2.5.20
-        version: 2.5.20(prettier@3.7.4)
+        specifier: ^2.5.21
+        version: 2.5.21(prettier@3.8.0)
       prettier-plugin-sort-json:
-        specifier: 4.1.1
-        version: 4.1.1(prettier@3.7.4)
+        specifier: 4.2.0
+        version: 4.2.0(prettier@3.8.0)
       simple-git-hooks:
         specifier: ^2.13.1
         version: 2.13.1
       vite:
-        specifier: npm:rolldown-vite@^7.3.0
-        version: rolldown-vite@7.3.0(esbuild@0.27.2)(yaml@2.8.2)
+        specifier: npm:rolldown-vite@^7.3.1
+        version: rolldown-vite@7.3.1(esbuild@0.27.2)(yaml@2.8.2)
       vitepress:
         specifier: 2.0.0-alpha.15
         version: 2.0.0-alpha.15(@algolia/client-search@5.46.2)(lightningcss@1.30.2)(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.2)
@@ -414,10 +414,6 @@ packages:
   '@oxc-project/types@0.101.0':
     resolution: {integrity: sha512-nuFhqlUzJX+gVIPPfuE6xurd4lST3mdcWOhyK/rZO0B9XWMKm79SuszIQEnSMmmDhq1DC8WWVYGVd+6F93o1gQ==}
 
-  '@pkgr/core@0.2.9':
-    resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
   '@rolldown/binding-android-arm64@1.0.0-beta.53':
     resolution: {integrity: sha512-Ok9V8o7o6YfSdTTYA/uHH30r3YtOxLD6G3wih/U9DO0ucBBFq8WPt/DslU53OgfteLRHITZny9N/qCUxMf9kjQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -638,8 +634,8 @@ packages:
   '@theojs/lumen@6.4.5':
     resolution: {integrity: sha512-ed8xR9o49SbO1n+3tvttvoGBNYAIA+ICp7s1Mlw2MJdTwvMCblTsRiLuOlh4Rv5+9WtfR9TZsOe4bRPhRjtIqg==}
 
-  '@trivago/prettier-plugin-sort-imports@6.0.0':
-    resolution: {integrity: sha512-Xarx55ow0R8oC7ViL5fPmDsg1EBa1dVhyZFVbFXNtPPJyW2w9bJADIla8YFSaNG9N06XfcklA9O9vmw4noNxkQ==}
+  '@trivago/prettier-plugin-sort-imports@6.0.2':
+    resolution: {integrity: sha512-3DgfkukFyC/sE/VuYjaUUWoFfuVjPK55vOFDsxD56XXynFMCZDYFogH2l/hDfOsQAm1myoU/1xByJ3tWqtulXA==}
     engines: {node: '>= 20'}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -1190,22 +1186,22 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-packagejson@2.5.20:
-    resolution: {integrity: sha512-G8cowPh+QmJJECTZlrPDKWkVVcwrFjF2rGcw546w3N8blLoc4szSs8UUPfFVxHUNLUjiru71Ah83g1lZkeK9Bw==}
+  prettier-plugin-packagejson@2.5.21:
+    resolution: {integrity: sha512-d9ivsysb1SeRaKDhjf6Hi7jBGnP4TVsh7DeVi8N5HtHJ5vwD7YHcQIuy6jRkr2qGW/VKbrEVDWVMODuqcZuz8Q==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
       prettier:
         optional: true
 
-  prettier-plugin-sort-json@4.1.1:
-    resolution: {integrity: sha512-uJ49wCzwJ/foKKV4tIPxqi4jFFvwUzw4oACMRG2dcmDhBKrxBv0L2wSKkAqHCmxKCvj0xcCZS4jO2kSJO/tRJw==}
+  prettier-plugin-sort-json@4.2.0:
+    resolution: {integrity: sha512-jK1w3/7otTvHtv1eoLji2U9mEoOGeyl7QQQ/afLnjht1YtRLSUUk8o0rIIC/HUVXhoGPCFe4SVZbRGYjjUVgvA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       prettier: ^3.0.0
 
-  prettier@3.7.4:
-    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+  prettier@3.8.0:
+    resolution: {integrity: sha512-yEPsovQfpxYfgWNhCfECjG5AQaO+K3dp6XERmOepyPDVqcJm+bjyCVO3pmU+nAPe0N5dDvekfGezt/EIiRe1TA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1231,8 +1227,8 @@ packages:
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
-  rolldown-vite@7.3.0:
-    resolution: {integrity: sha512-5hI5NCJwKBGtzWtdKB3c2fOEpI77Iaa0z4mSzZPU1cJ/OqrGbFafm90edVCd7T9Snz+Sh09TMAv4EQqyVLzuEg==}
+  rolldown-vite@7.3.1:
+    resolution: {integrity: sha512-LYzdNAjRHhF2yA4JUQm/QyARyi216N2rpJ0lJZb8E9FU2y5v6Vk+xq/U4XBOxMefpWixT5H3TslmAHm1rqIq2w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1347,10 +1343,6 @@ packages:
     resolution: {integrity: sha512-gaCPRVoMq8WGDcWj9p4YWzCMPHzE0WNl6W8ADIx9c3JBEIdMkJGMzW+uzXvxHMltwcYACr9jP+32H8/hgwMR7w==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  synckit@0.11.11:
-    resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
 
   tabbable@6.4.0:
     resolution: {integrity: sha512-05PUHKSNE8ou2dwIxTngl4EzcnsCDZGJ/iCLtDflR/SHB/ny14rXc+qU5P4mG9JkusiV7EivzY9Mhm55AzAvCg==}
@@ -1823,8 +1815,6 @@ snapshots:
 
   '@oxc-project/types@0.101.0': {}
 
-  '@pkgr/core@0.2.9': {}
-
   '@rolldown/binding-android-arm64@1.0.0-beta.53':
     optional: true
 
@@ -1983,7 +1973,7 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@trivago/prettier-plugin-sort-imports@6.0.0(@vue/compiler-sfc@3.5.26)(prettier@3.7.4)':
+  '@trivago/prettier-plugin-sort-imports@6.0.2(@vue/compiler-sfc@3.5.26)(prettier@3.8.0)':
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -1993,7 +1983,7 @@ snapshots:
       lodash-es: 4.17.22
       minimatch: 9.0.5
       parse-imports-exports: 0.2.4
-      prettier: 3.7.4
+      prettier: 3.8.0
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.26
     transitivePeerDependencies:
@@ -2514,18 +2504,17 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-packagejson@2.5.20(prettier@3.7.4):
+  prettier-plugin-packagejson@2.5.21(prettier@3.8.0):
     dependencies:
       sort-package-json: 3.5.0
-      synckit: 0.11.11
     optionalDependencies:
-      prettier: 3.7.4
+      prettier: 3.8.0
 
-  prettier-plugin-sort-json@4.1.1(prettier@3.7.4):
+  prettier-plugin-sort-json@4.2.0(prettier@3.8.0):
     dependencies:
-      prettier: 3.7.4
+      prettier: 3.8.0
 
-  prettier@3.7.4: {}
+  prettier@3.8.0: {}
 
   property-information@7.1.0: {}
 
@@ -2548,7 +2537,7 @@ snapshots:
 
   rfdc@1.4.1: {}
 
-  rolldown-vite@7.3.0(esbuild@0.27.2)(yaml@2.8.2):
+  rolldown-vite@7.3.1(esbuild@0.27.2)(yaml@2.8.2):
     dependencies:
       '@oxc-project/runtime': 0.101.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2679,10 +2668,6 @@ snapshots:
     dependencies:
       dequal: 2.0.3
       use-sync-external-store: 1.6.0
-
-  synckit@0.11.11:
-    dependencies:
-      '@pkgr/core': 0.2.9
 
   tabbable@6.4.0: {}
 
