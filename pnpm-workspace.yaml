@@ -1,9 +1,8 @@
 packages:
   - /
 
-onlyBuiltDependencies:
-  - esbuild
-  - simple-git-hooks
-
 shellEmulator: true
 autoInstallPeers: false
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
