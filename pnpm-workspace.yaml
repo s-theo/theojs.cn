@@ -6,3 +6,4 @@ autoInstallPeers: false
 allowBuilds:
   esbuild: true
   simple-git-hooks: true
+minimumReleaseAge: 0
