@@ -9,7 +9,25 @@ export default defineConfig({
   // appearance: 'force-dark',
   metaChunk: true,
   cleanUrls: true,
+  srcExclude: ['AGENTS.md'],
   sitemap: { hostname: 'https://theojs.cn' },
+  vite: {
+    build: {
+      rollupOptions: {
+        onwarn(warning, warn) {
+          if (
+            warning.code === 'INVALID_ANNOTATION' &&
+            typeof warning.id === 'string' &&
+            warning.id.includes('@vueuse/core')
+          ) {
+            return
+          }
+
+          warn(warning)
+        }
+      }
+    }
+  },
   head,
   transformPageData,
   themeConfig: {

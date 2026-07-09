@@ -3,6 +3,7 @@ import type { UserConfig } from 'vitepress'
 const baseUrl = 'https://theojs.cn'
 const imgUrl = 'https://i.theojs.cn/logo/avatar-mini.webp'
 const defaultOgImage = 'https://i.theojs.cn/logo/theojs-og.webp'
+const defaultPublishedTime = '2020-07-21T08:17:36.000Z'
 
 export const transformPageData: UserConfig['transformPageData'] = (pageData) => {
   // head is an array
@@ -12,14 +13,14 @@ export const transformPageData: UserConfig['transformPageData'] = (pageData) => 
   const DynamicUrl = `${baseUrl}/${pageData.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
 
   // title
-  const title =
-    `${pageData.frontmatter?.hero?.name} ${pageData.frontmatter?.hero?.text}` || pageData.title || 'Theo Homepage'
+  const heroTitle = [pageData.frontmatter?.hero?.name, pageData.frontmatter?.hero?.text].filter(Boolean).join(' ')
+  const title = heroTitle || pageData.title || 'Theo Homepage'
 
   // description
   const description = pageData.frontmatter?.hero?.tagline || pageData.description || 'Homepage'
 
   // modified_time
-  const modified_time = pageData.lastUpdated ? new Date(pageData.lastUpdated).toISOString() : new Date().toISOString()
+  const modifiedTime = pageData.lastUpdated ? new Date(pageData.lastUpdated).toISOString() : defaultPublishedTime
 
   // og:image
   const ogImageEntry = pageData.frontmatter.head.find((item) => item[0] === 'meta' && item[1]?.property === 'og:image')
@@ -69,8 +70,8 @@ export const transformPageData: UserConfig['transformPageData'] = (pageData) => 
     ['meta', { property: 'twitter:title', content: title }],
     ['meta', { property: 'twitter:image', content: ogImage }],
     ['meta', { property: 'twitter:description', content: description }],
-    ['meta', { property: 'article:published_time', content: '2020-07-21T08:17:36.000Z' }],
-    ['meta', { property: 'article:modified_time', content: modified_time }],
+    ['meta', { property: 'article:published_time', content: defaultPublishedTime }],
+    ['meta', { property: 'article:modified_time', content: modifiedTime }],
     ['script', { type: 'application/ld+json' }, JSON.stringify(jsonLd)]
   )
 }
