@@ -22,22 +22,22 @@ export const Footer_Data: FooterData = {
   //     title: '优质线路',
   //     icon: 'heroicons:globe-alt-solid',
   //     links: [
-  //       { name: 'FlyingBird - 飞鸟机场', link: 'https://itheo.top/flyingbird', rel: 'sponsored noreferrer' },
-  //       { name: 'Totoro - 龙猫云', link: 'https://itheo.top/totoro', rel: 'sponsored noreferrer' },
-  //       { name: '青云梯', link: 'https://itheo.top/qyt', rel: 'sponsored noreferrer' },
-  //       { name: 'Galaxy - 银河云', link: 'https://itheo.top/yhy', rel: 'sponsored noreferrer' },
-  //       { name: 'TNT Cloud', link: 'https://itheo.top/tnt', rel: 'sponsored noreferrer' },
-  //       { name: '小蜜蜂', link: 'https://itheo.top/bee', rel: 'sponsored noreferrer' },
+  //       { name: 'FlyingBird - 飞鸟机场', link: 'https://ilil.uk/flyingbird', rel: 'sponsored noreferrer' },
+  //       { name: 'Totoro - 龙猫云', link: 'https://ilil.uk/totoro', rel: 'sponsored noreferrer' },
+  //       { name: '青云梯', link: 'https://ilil.uk/qyt', rel: 'sponsored noreferrer' },
+  //       { name: 'Galaxy - 银河云', link: 'https://ilil.uk/yhy', rel: 'sponsored noreferrer' },
+  //       { name: 'TNT Cloud', link: 'https://ilil.uk/tnt', rel: 'sponsored noreferrer' },
+  //       { name: '小蜜蜂', link: 'https://ilil.uk/bee', rel: 'sponsored noreferrer' },
   //     ]
   //   },
   //   {
   //     title: '流媒体合租',
   //     icon: 'heroicons:tv-solid',
   //     links: [
-  //       { name: '银河录像局', link: 'https://itheo.top/yh', rel: 'sponsored noreferrer' },
-  //       { name: '奈飞小铺', link: 'https://itheo.top/ihezu', rel: 'sponsored noreferrer' },
-  //       { name: '蜜糖商店', link: 'https://itheo.top/metshop', rel: 'sponsored noreferrer' },
-  //       { name: 'SMS-Activate', link: 'https://itheo.top/sms', rel: 'sponsored noreferrer' }
+  //       { name: '银河录像局', link: 'https://ilil.uk/yh', rel: 'sponsored noreferrer' },
+  //       { name: '奈飞小铺', link: 'https://ilil.uk/ihezu', rel: 'sponsored noreferrer' },
+  //       { name: '蜜糖商店', link: 'https://ilil.uk/metshop', rel: 'sponsored noreferrer' },
+  //       { name: 'SMS-Activate', link: 'https://ilil.uk/sms', rel: 'sponsored noreferrer' }
   //     ]
   //   },
   //   {
