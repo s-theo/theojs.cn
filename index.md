@@ -30,7 +30,7 @@ features:
     link: https://github.com/s-theo/lumen
 ---
 
-<Home />
+<Underline />
 
 <style>
 .VPFeature .title {
