@@ -21,7 +21,7 @@ export default {
       src: import.meta.env.VITE_UMAMI_SRC,
       domains: 'theojs.cn'
     })
-    app.component('Home', lm.Underline)
+    app.component('Underline', lm.Underline)
     app.component('Links', lm.Links)
   }
 }
