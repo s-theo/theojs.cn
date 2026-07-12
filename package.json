@@ -19,7 +19,7 @@
     "@theojs/lumen": "^6.4.7",
     "lint-staged": "^17.0.8",
     "simple-git-hooks": "^2.13.1",
-    "vite": "npm:rolldown-vite@^7.3.1",
+    "vite": "^8.1.4",
     "vitepress": "2.0.0-alpha.18",
     "vue": "^3.5.39"
   },
