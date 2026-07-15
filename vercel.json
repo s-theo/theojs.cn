@@ -1,5 +1,7 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "framework": "astro",
   "headers": [
     {
       "headers": [
@@ -11,5 +13,6 @@
       "source": "/_astro/(.*)"
     }
   ],
+  "outputDirectory": "dist",
   "regions": ["hkg1"]
 }
