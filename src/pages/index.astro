@@ -1,0 +1,11 @@
+---
+import Welcome from "../components/Welcome.astro";
+import { siteData } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const description = `${siteData.name} 的个人主页，汇总长期维护的内容站点与开源项目。`;
+---
+
+<BaseLayout description={description}>
+  <Welcome />
+</BaseLayout>

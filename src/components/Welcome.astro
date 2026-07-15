@@ -1,0 +1,48 @@
+---
+import { siteData } from "../data/site";
+---
+
+<main class="container mx-auto flex min-h-dvh max-w-5xl flex-col px-4 pt-20 pb-16 sm:pt-24">
+  <section class="mx-auto mb-14 max-w-2xl text-center" aria-labelledby="page-title">
+    <h1 id="page-title" class="mb-2 text-4xl font-bold tracking-tight sm:text-5xl">{siteData.name}</h1>
+    <p class="mb-4 text-xl font-medium text-muted-foreground">{siteData.motto}</p>
+    <p class="mx-auto max-w-xl leading-7 text-muted-foreground">{siteData.introduction}</p>
+  </section>
+
+  <section aria-labelledby="sites-title">
+    <h2 id="sites-title" class="mb-6 text-2xl font-semibold tracking-tight">站点与项目</h2>
+
+    <div class="grid gap-4 md:grid-cols-3">
+      {
+        siteData.destinations.map((link) => (
+          <a
+            class="site-card rounded-xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`打开 ${link.name}`}
+            data-site={link.key}
+          >
+            <article class="site-card__surface h-full overflow-hidden rounded-xl border bg-card text-card-foreground shadow-sm">
+              <div class="site-logo-stage border-b">
+                <img
+                  class="site-logo"
+                  src={link.logo}
+                  alt={`${link.name} Logo`}
+                  width="96"
+                  height="96"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6">
+                <p class="mb-3 text-xs font-medium text-muted-foreground">{link.category}</p>
+                <h3 class="text-xl font-semibold">{link.name}</h3>
+                <p class="mt-2 text-sm leading-6 text-muted-foreground">{link.description}</p>
+              </div>
+            </article>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</main>

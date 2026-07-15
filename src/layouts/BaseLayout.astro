@@ -1,0 +1,75 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description: string;
+}
+
+const { title = "Theo", description } = Astro.props;
+const pageTitle = title === "Theo" ? "Theo - 个人主页" : `${title} | Theo`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const socialImage = "https://i.theojs.cn/logo/theojs-og.webp";
+const avatar = "https://i.theojs.cn/logo/avatar-mini.webp";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://theojs.cn/#person",
+      name: "Theo",
+      url: "https://theojs.cn/",
+      image: avatar,
+      sameAs: ["https://github.com/s-theo"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://theojs.cn/#website",
+      url: "https://theojs.cn/",
+      name: "Theo",
+      description,
+      inLanguage: "zh-Hans",
+      author: { "@id": "https://theojs.cn/#person" },
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="Theo" />
+    <meta name="copyright" content="Theo" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f5f7fc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1425" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href={avatar} />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="Theo" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <slot />
+    <SiteFooter />
+  </body>
+</html>

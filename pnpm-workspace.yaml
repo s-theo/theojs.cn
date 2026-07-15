@@ -3,7 +3,9 @@ packages:
 
 shellEmulator: true
 autoInstallPeers: false
+peerDependencyRules:
+  allowedVersions:
+    "@yeskunall/astro-umami>astro": "^7.0.0"
 allowBuilds:
   esbuild: true
-  simple-git-hooks: true
 minimumReleaseAge: 0
