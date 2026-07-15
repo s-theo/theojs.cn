@@ -4,27 +4,32 @@
 
 Before making changes in this repository:
 
-1. Enter the project root: `/root/workspace/theojs.cn`.
-2. Run `git pull` to sync the latest remote changes.
-3. Read this `AGENTS.md` completely.
-4. Inspect the relevant source files before editing.
+1. Enter `/root/workspace/theojs.cn`.
+2. Check `git status` and the current branch to protect uncommitted work.
+3. Run `git pull --ff-only` to sync the latest remote changes.
+4. Read this file completely and inspect the relevant source files.
 
 ## Project Overview
 
-This repository powers `https://theojs.cn`, Theo's personal VitePress homepage.
+This repository powers `https://theojs.cn`, Theo's static personal homepage.
 
-It is intentionally small:
+The stack is intentionally small:
 
-- `index.md` is the homepage content and VitePress home frontmatter.
-- `.vitepress/config.mts` is the main VitePress config.
-- `.vitepress/configs/head.ts` defines shared static `<head>` entries.
-- `.vitepress/configs/transformPageData.ts` injects canonical URLs, Open Graph metadata, Twitter metadata, and JSON-LD.
-- `.vitepress/data/FooterData.ts` provides data for the Lumen footer.
-- `.vitepress/theme/index.ts` extends the default VitePress theme with `@theojs/lumen` components and analytics.
-- `public/` contains static public assets such as `robots.txt`.
-- `vercel.json` contains Vercel deployment settings.
+- Astro in static-output mode.
+- Tailwind CSS through the official Vite plugin.
+- TypeScript for site data and component logic.
+- `@yeskunall/astro-umami` for optional analytics.
+- Vercel for hosting.
 
-There are no separate `nav.ts` or `sidebar.ts` files in this repository. Navigation-like homepage links live in `index.md`.
+Important locations:
+
+- `src/pages/` contains the homepage and 404 page.
+- `src/layouts/BaseLayout.astro` owns shared metadata, structured data, and the footer.
+- `src/data/site.ts` is the single source of truth for visible site links and personal copy.
+- `src/styles/global.css` contains Tailwind and the site design tokens.
+- `astro.config.ts` owns the static site URL, Tailwind, and Umami integrations.
+- `public/` contains static public assets including `robots.txt` and the single-page `sitemap.xml`.
+- `vercel.json` contains Vercel cache and region settings.
 
 ## Commands
 
@@ -32,38 +37,44 @@ Use pnpm:
 
 - Install: `pnpm install --frozen-lockfile`
 - Dev server: `pnpm run dev`
+- Type and Astro checks: `pnpm run check`
 - Build: `pnpm run build`
 - Format and apply safe fixes: `pnpm run format`
 - Check formatting: `pnpm run format:check`
 - Preview build: `pnpm run preview`
 
-## Formatting
+## Engineering Rules
 
-This repository uses Biome, not Prettier.
+- Keep the site statically rendered. Do not add SSR, API routes, a CMS, or a database without explicit approval.
+- Do not add a client framework or UI component library without a concrete need.
+- Keep visible content and external URLs in `src/data/site.ts`.
+- Use semantic HTML, visible keyboard focus, responsive layouts, and `prefers-reduced-motion` fallbacks.
+- Keep dark mode CSS-only and follow the system color scheme automatically.
+- This repository uses Biome, not Prettier.
+- Preserve both legal registration numbers and their official links in the footer.
+- Do not restore the removed sponsor link or sponsor-specific link metadata.
 
-- Do not add Prettier or Prettier plugins back.
-- Keep `biome.json` as the source of formatting rules.
-- Use `pnpm run format` before committing broad formatting-sensitive edits.
-- Use `pnpm run format:check` during verification.
-- `lint-staged` runs `biome check --write --no-errors-on-unmatched`.
+## SEO and Analytics
 
-## VitePress Notes
-
-- Keep `cleanUrls: true` aligned with deployed URLs.
-- Keep `srcExclude: ['AGENTS.md']` so workspace instructions are not published as a site page.
-- Keep homepage links in `index.md` as absolute external URLs when they point to other Theo sites.
-- `transformPageData.ts` owns SEO metadata. Be careful with fallback logic so generated titles and descriptions do not contain `undefined`.
-- Use a stable fallback timestamp in `transformPageData.ts`; do not use the current build time for `article:modified_time`.
-- The Vite Rollup warning filter suppresses the known `@vueuse/core` `INVALID_ANNOTATION` warning only. Keep other warnings visible.
-- `@theojs/lumen` is used in `.vitepress/theme/index.ts`; preserve `Footer_Data` wiring unless replacing the footer intentionally.
+- `BaseLayout.astro` owns canonical URLs, Open Graph, Twitter metadata, and JSON-LD.
+- Keep the canonical origin at `https://theojs.cn` and language at `zh-Hans`.
+- Keep `public/sitemap.xml` and `public/robots.txt` aligned.
+- Umami is enabled only when all three variables are configured:
+  - `ASTRO_UMAMI_WEBSITE_ID`
+  - `ASTRO_UMAMI_ENDPOINT_URL`
+  - `ASTRO_UMAMI_DOMAIN`
+- Never commit or print analytics IDs.
 
 ## Deployment
 
-The project is deployed as a VitePress static site. Verify deploy-facing changes with:
+Verify deploy-facing changes with:
 
 ```bash
 pnpm install --frozen-lockfile
 pnpm run format:check
+pnpm run check
 pnpm run build
 git diff --check
 ```
+
+The project uses Astro's static output and does not require a Vercel adapter. Keep immutable caching scoped to `/_astro/*`.

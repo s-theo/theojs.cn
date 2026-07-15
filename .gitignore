@@ -14,17 +14,17 @@ npm-debug.log
 yarn-error.log
 .pnpm-debug.log
 
-# Vitepress生成的文件
-.vitepress/dist
-.vitepress/cache
-
-# Vite缓存文件
+# Astro 和 Vite 生成的文件
 dist/
+.astro/
 .cache/
 .vite/
 tmp/
 
 # 环境变量文件
+.env
+.env.*
+!.env.example
 .env.local
 .env.*.local
 

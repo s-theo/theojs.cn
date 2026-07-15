@@ -1,5 +1,7 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "framework": "astro",
   "headers": [
     {
       "headers": [
@@ -8,8 +10,9 @@
           "value": "max-age=31536000, immutable"
         }
       ],
-      "source": "/assets/(.*)"
+      "source": "/_astro/(.*)"
     }
   ],
+  "outputDirectory": "dist",
   "regions": ["hkg1"]
 }
