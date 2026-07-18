@@ -1,7 +1,3 @@
-packages:
-  - /
-
-shellEmulator: true
 autoInstallPeers: false
 peerDependencyRules:
   allowedVersions:
