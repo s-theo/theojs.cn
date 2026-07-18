@@ -15,10 +15,10 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.1.1",
     "@yeskunall/astro-umami": "0.0.9",
-    "astro": "^7.1.0",
+    "astro": "^7.1.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
     "vite": "^8.1.5"
   },
-  "packageManager": "pnpm@11.13.1"
+  "packageManager": "pnpm@11.14.0"
 }
