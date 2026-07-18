@@ -19,10 +19,12 @@ subtree has genuinely different commands or constraints.
 ## Project and toolchain
 
 - `https://theojs.cn` is a small static personal homepage with `/` and a static 404 page.
-- Use Node `>=22.12.0` (required by the locked Astro release) and the
-  `packageManager` version in `package.json` (`pnpm@11.14.0` currently).
+- Read exact dependency and tool versions from `package.json` (including `packageManager`),
+  resolved versions and engine/peer constraints from the lockfile or installed package
+  metadata, and install exceptions from workspace/config files. Use a Node runtime that
+  satisfies the locked Astro package's `engines`; do not copy current version numbers here.
 - The root is the only pnpm workspace package and is ESM.
-- Stack: Astro 7 static output, Tailwind CSS 4 through `@tailwindcss/vite`, strict TypeScript,
+- Stack: Astro static output, Tailwind CSS through `@tailwindcss/vite`, strict TypeScript,
   Biome, optional `@yeskunall/astro-umami`, and Vercel production hosting.
 - Keep the site framework-free on the client and statically rendered. Do not add hydration,
   SSR, API routes, an adapter, CMS, database, or UI framework without an explicit need and
@@ -81,14 +83,15 @@ hook instead of restoring `simple-git-hooks` or `lint-staged`.
 - Umami is enabled only when all three variables are present:
   `ASTRO_UMAMI_WEBSITE_ID`, `ASTRO_UMAMI_ENDPOINT_URL`, and `ASTRO_UMAMI_DOMAIN`. Never print
   or commit their values.
-- Keep the `@yeskunall/astro-umami>astro: ^7.0.0` peer override until the plugin's published
-  peer range supports the installed Astro version and compatibility has been verified.
-  Automatic peer installation is disabled, and only `esbuild` is approved to run a build
-  script.
-- Keep `minimumReleaseAge: 0`; pnpm 11 defaults to a 1,440-minute release delay, and this
-  repository intentionally opts out. Keep project pnpm settings in `pnpm-workspace.yaml`;
-  introduce `.npmrc` only when registry or authentication configuration is genuinely needed,
-  and never commit credentials.
+- Keep the parent-scoped Astro peer allowance for `@yeskunall/astro-umami` while the plugin's
+  published peer range excludes the installed Astro release. Read the exact allowance from
+  `pnpm-workspace.yaml` and verify package peer metadata before changing it. Automatic peer
+  installation is disabled, and only `esbuild` is approved to run a build script.
+- Preserve the explicit `minimumReleaseAge` opt-out in `pnpm-workspace.yaml`; it intentionally
+  disables the dependency release delay. Verify current field semantics against the
+  `packageManager` release before changing it. Keep project pnpm settings in
+  `pnpm-workspace.yaml`; introduce `.npmrc` only when registry or authentication
+  configuration is genuinely needed, and never commit credentials.
 - `SiteLink.key` and the `[data-site="..."]` light/dark logo-stage selectors in
   `global.css` are coupled; update the type, data, and both color modes together.
 - Preserve CSS-only system dark mode, responsive layout, keyboard focus, fine-pointer hover,

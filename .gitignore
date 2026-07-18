@@ -29,7 +29,9 @@ tmp/
 .env.*.local
 
 # 编辑器和IDE生成的文件
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea/
 *.sublime-project
 *.sublime-workspace
