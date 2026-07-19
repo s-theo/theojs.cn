@@ -20,9 +20,9 @@ subtree has genuinely different commands or constraints.
 
 - `https://theojs.cn` is a small static personal homepage with `/` and a static 404 page.
 - Read exact dependency and tool versions from `package.json` (including `packageManager`),
-  resolved versions and engine/peer constraints from the lockfile or installed package
-  metadata, and install exceptions from workspace/config files. Use a Node runtime that
-  satisfies the locked Astro package's `engines`; do not copy current version numbers here.
+  resolved versions and peer constraints from the lockfile or installed package metadata,
+  install exceptions from workspace/config files, and the Node version from `.nvmrc`; do not
+  copy current version numbers here.
 - The root is the only pnpm workspace package and is ESM.
 - Stack: Astro static output, Tailwind CSS through `@tailwindcss/vite`, strict TypeScript,
   Biome, optional `@yeskunall/astro-umami`, and Vercel production hosting.
