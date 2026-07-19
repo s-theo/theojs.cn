@@ -70,9 +70,7 @@ pnpm run format                 # Biome write/fix; intentionally mutates files
 
 There is no separate unit-test or lint script. Do not add Prettier; Biome owns formatting,
 linting, and import organization. `pnpm-lock.yaml` is intentionally outside Biome's scope.
-No Git hooks are managed here. Older checkouts may retain a generated
-`.git/hooks/pre-commit` that invokes the removed `pnpm lint-staged`; delete only that stale
-hook instead of restoring `simple-git-hooks` or `lint-staged`.
+No Git hooks are managed here.
 
 ## Invariants and pitfalls
 
