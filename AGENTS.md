@@ -25,14 +25,15 @@ subtree has genuinely different commands or constraints.
   copy current version numbers here.
 - The root is the only pnpm workspace package and is ESM.
 - Stack: Astro static output, Tailwind CSS through `@tailwindcss/vite`, strict TypeScript,
-  Biome, optional `@yeskunall/astro-umami`, and Vercel production hosting.
+  Biome, optional `@yeskunall/astro-umami`, and Cloudflare Pages production hosting.
 - Keep the site framework-free on the client and statically rendered. Do not add hydration,
   SSR, API routes, an adapter, CMS, database, or UI framework without an explicit need and
   approval.
-- No CI workflow is committed in this repository. Vercel's Git integration deploys `main` to
-  production, and `vercel.json` is the only checked-in platform configuration. Cloudflare
-  fronts the public domain but is not this repository's Pages host; do not remove the Vercel
-  configuration based only on Cloudflare response headers.
+- No CI workflow is committed in this repository. Cloudflare Pages Git integration deploys
+  `main` to production. Keep its dashboard build settings aligned with `pnpm run build`,
+  Astro's `dist/` output, and the Node version in `.nvmrc`.
+- No Cloudflare runtime or deployment configuration is checked in. The Pages dashboard
+  manages Git integration, environment variables, domains, and cache settings.
 
 ## Repository map
 
@@ -51,8 +52,7 @@ subtree has genuinely different commands or constraints.
   conditional Umami integration.
 - `public/robots.txt` and `public/sitemap.xml`: manually maintained crawler files; the sitemap
   currently contains only the homepage.
-- `pnpm-workspace.yaml`: peer, build-script, and release-age install policy. `vercel.json`:
-  Astro preset, `dist` output, clean URLs, `hkg1`, and immutable caching for `/_astro/*`.
+- `pnpm-workspace.yaml`: peer, build-script, and release-age install policy.
 - `renovate.json`: inherits `github>s-theo/dotfiles`; inspect that shared preset before
   changing dependency automation policy.
 
@@ -99,8 +99,9 @@ No Git hooks are managed here.
   `nofollow` data field.
 - Destination logos, favicon, OG image, and registration icons are remote assets with no
   local fallback.
-- Keep Vercel's output directory aligned with Astro's `dist/`; immutable caching belongs only
-  on hashed `/_astro/*` assets.
+- Keep Cloudflare Pages' build output aligned with Astro's `dist/`. This static site does not
+  need a Cloudflare adapter, Pages Functions, Wrangler configuration, or a manual deploy
+  script unless its runtime or deployment model changes.
 
 ## Validation and delivery
 
@@ -108,7 +109,7 @@ No Git hooks are managed here.
   `git diff --check`.
 - Astro, TypeScript, layout, component, or data changes: run `pnpm run format:check`,
   `pnpm run check`, and `git diff --check`.
-- Anything affecting rendered output, CSS, SEO, `public/`, Astro/Vercel configuration, or
+- Anything affecting rendered output, CSS, SEO, `public/`, Astro/Cloudflare configuration, or
   dependencies: also run `pnpm run build`.
 - Dependency or lockfile changes: run `pnpm install --frozen-lockfile` before the relevant
   checks and review both manifest and lockfile diffs.
