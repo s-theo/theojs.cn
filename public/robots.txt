@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://theojs.cn/sitemap.xml
+Sitemap: https://theojs.net/sitemap.xml

@@ -55,38 +55,18 @@ a {
   text-align: center;
 }
 
-.site-footer__inner {
-  display: grid;
-  justify-items: center;
-}
-
-.site-footer__records,
 .site-footer__credit {
   color: var(--muted-foreground);
   font-size: 0.72rem;
 }
 
-.site-footer__records {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem 1.5rem;
-}
-
-.site-footer__records a,
 .site-footer__credit a {
   color: inherit;
   text-decoration: none;
 }
 
-.site-footer__records a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-}
-
 .site-footer__credit {
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
 .not-found {

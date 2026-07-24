@@ -1,11 +1,11 @@
-# AGENTS.md — theojs.cn
+# AGENTS.md — theojs.net
 
 Scope: the entire repository. There are no nested instruction files; add one only when a
 subtree has genuinely different commands or constraints.
 
 ## Start safely
 
-1. Work from `/root/workspace/theojs.cn` and read this file plus the files relevant to the
+1. Work from `/root/workspace/theojs.net` and read this file plus the files relevant to the
    task.
 2. Run `git status --short --branch`; inspect the branch, upstream, index, worktree,
    untracked files, and any merge/rebase/cherry-pick or other in-progress Git operation
@@ -18,7 +18,7 @@ subtree has genuinely different commands or constraints.
 
 ## Project and toolchain
 
-- `https://theojs.cn` is a small static personal homepage with `/` and a static 404 page.
+- `https://theojs.net` is a small static personal homepage with `/` and a static 404 page.
 - Read exact dependency and tool versions from `package.json` (including `packageManager`),
   resolved versions and peer constraints from the lockfile or installed package metadata,
   install exceptions from workspace/config files, and the Node version from `.nvmrc`; do not
@@ -42,8 +42,7 @@ subtree has genuinely different commands or constraints.
 - `src/layouts/BaseLayout.astro`: global CSS import, titles, canonical URL, Open Graph,
   Twitter metadata, Person/WebSite JSON-LD, shared slot, and footer placement.
 - `src/components/Welcome.astro`: homepage hero.
-- `src/components/SiteFooter.astro`: legal registration links, icons, dynamic build-year
-  copyright, and GitHub link.
+- `src/components/SiteFooter.astro`: dynamic build-year copyright and GitHub link.
 - `src/data/site.ts`: typed homepage identity data only; it is not the source of SEO, footer,
   or 404 copy.
 - `src/styles/global.css`: Tailwind entry, design tokens, footer/404 styles, system dark mode,
@@ -74,7 +73,7 @@ No Git hooks are managed here.
 
 ## Invariants and pitfalls
 
-- Keep the canonical origin `https://theojs.cn` and language `zh-Hans`. A domain change must
+- Keep the canonical origin `https://theojs.net` and language `zh-Hans`. A domain change must
   update `astro.config.ts`, BaseLayout JSON-LD, `public/robots.txt`, and
   `public/sitemap.xml`.
 - New indexable routes require a manual sitemap update; do not add the 404 page.
@@ -92,10 +91,9 @@ No Git hooks are managed here.
   configuration is genuinely needed, and never commit credentials.
 - Preserve CSS-only system dark mode, responsive layout, keyboard focus, fine-pointer hover,
   and `prefers-reduced-motion`. Do not add a theme toggle or persistence script.
-- Preserve both current registration numbers and official links in `SiteFooter.astro`.
-  Footer year is generated at build time. Do not restore the removed sponsor content or a
+- Footer year is generated at build time. Do not restore the removed sponsor content or a
   `nofollow` data field.
-- Favicon, OG image, and registration icons are remote assets with no local fallback.
+- Favicon and OG image are remote assets with no local fallback.
 - Keep Cloudflare Pages' build output aligned with Astro's `dist/`. This static site does not
   need a Cloudflare adapter, Pages Functions, Wrangler configuration, or a manual deploy
   script unless its runtime or deployment model changes.

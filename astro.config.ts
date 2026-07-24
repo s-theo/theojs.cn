@@ -18,7 +18,7 @@ if (env.ASTRO_UMAMI_WEBSITE_ID && env.ASTRO_UMAMI_ENDPOINT_URL && env.ASTRO_UMAM
 }
 
 export default defineConfig({
-  site: "https://theojs.cn",
+  site: "https://theojs.net",
   output: "static",
   integrations,
   vite: {
