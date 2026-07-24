@@ -41,13 +41,13 @@ subtree has genuinely different commands or constraints.
 - `src/pages/404.astro`: static 404 route and its copy.
 - `src/layouts/BaseLayout.astro`: global CSS import, titles, canonical URL, Open Graph,
   Twitter metadata, Person/WebSite JSON-LD, shared slot, and footer placement.
-- `src/components/Welcome.astro`: homepage hero and full-card destination links.
+- `src/components/Welcome.astro`: homepage hero.
 - `src/components/SiteFooter.astro`: legal registration links, icons, dynamic build-year
   copyright, and GitHub link.
-- `src/data/site.ts`: typed homepage identity and destination-card data only; it is not the
-  source of SEO, footer, or 404 copy.
-- `src/styles/global.css`: Tailwind entry, design tokens, card/footer/404 styles, system dark
-  mode, and reduced-motion handling.
+- `src/data/site.ts`: typed homepage identity data only; it is not the source of SEO, footer,
+  or 404 copy.
+- `src/styles/global.css`: Tailwind entry, design tokens, footer/404 styles, system dark mode,
+  and reduced-motion handling.
 - `astro.config.ts`: canonical site origin, static output, Tailwind Vite plugin, and
   conditional Umami integration.
 - `public/robots.txt` and `public/sitemap.xml`: manually maintained crawler files; the sitemap
@@ -90,15 +90,12 @@ No Git hooks are managed here.
   `packageManager` release before changing it. Keep project pnpm settings in
   `pnpm-workspace.yaml`; introduce `.npmrc` only when registry or authentication
   configuration is genuinely needed, and never commit credentials.
-- `SiteLink.key` and the `[data-site="..."]` light/dark logo-stage selectors in
-  `global.css` are coupled; update the type, data, and both color modes together.
 - Preserve CSS-only system dark mode, responsive layout, keyboard focus, fine-pointer hover,
   and `prefers-reduced-motion`. Do not add a theme toggle or persistence script.
 - Preserve both current registration numbers and official links in `SiteFooter.astro`.
   Footer year is generated at build time. Do not restore the removed sponsor content or a
   `nofollow` data field.
-- Destination logos, favicon, OG image, and registration icons are remote assets with no
-  local fallback.
+- Favicon, OG image, and registration icons are remote assets with no local fallback.
 - Keep Cloudflare Pages' build output aligned with Astro's `dist/`. This static site does not
   need a Cloudflare adapter, Pages Functions, Wrangler configuration, or a manual deploy
   script unless its runtime or deployment model changes.
